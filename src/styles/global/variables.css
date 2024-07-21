@@ -13,12 +13,13 @@
   /* Fonts */
 
   --font-base: system-ui, sans-serif;
-  --font-heading: 'Silk', serif;
+  --font-title: 'Isenheim', serif;
+  --font-heading: 'Nyght Serif', serif;
   --font-weight-heading-1: 100;
-  --font-weight-heading-2: 200;
+  --font-weight-heading-2: 100;
   --font-weight-base: 400;
   --font-weight-bold: 700;
-  --content-measure: 60ch;
+  --content-measure: 80ch;
   --outline-offset: 0.25rem;
   --outline-size: 2px;
 
@@ -35,6 +36,7 @@
   --tracking-s: -0.07ch;
   --tracking: -0.05ch;
   --tracking-l: -0.01ch;
+  --tracking-xl: +0.04ch;
   --line-height-base: 1.4;
   --line-height-tight: 1;
 
@@ -49,36 +51,38 @@
   /* Font sizes */
 
   /* @link https://utopia.fyi/type/calculator?c=320,18,1.2,1350,20,1.414,5,1,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
-  --size-step--1: clamp(0.88rem, calc(0.95rem + -0.08vw), 0.94rem);
-  --size-step-0: clamp(1.13rem, calc(1.09rem + 0.19vw), 1.25rem);
-  --size-step-1: clamp(1.35rem, calc(1.22rem + 0.65vw), 1.77rem);
-  --size-step-2: clamp(1.62rem, calc(1.35rem + 1.37vw), 2.5rem);
-  --size-step-3: clamp(1.94rem, calc(1.45rem + 2.47vw), 3.53rem);
-  --size-step-4: clamp(2.33rem, calc(1.5rem + 4.14vw), 5rem);
-  --size-step-5: clamp(2.8rem, calc(1.47rem + 6.63vw), 7.07rem);
+  --size-step--2: clamp(0.6252rem, 0.8258rem + -0.2378vw, 0.7813rem);
+  --size-step--1: clamp(0.884rem, 0.9528rem + -0.0815vw, 0.9375rem);
+  --size-step-0: clamp(1.125rem, 1.0893rem + 0.1905vw, 1.25rem);
+  --size-step-1: clamp(1.35rem, 1.2307rem + 0.6362vw, 1.7675rem);
+  --size-step-2: clamp(1.62rem, 1.3688rem + 1.3398vw, 2.4992rem);
+  --size-step-3: clamp(1.944rem, 1.4897rem + 2.4228vw, 3.5339rem);
+  --size-step-4: clamp(2.3328rem, 1.5716rem + 4.0597vw, 4.997rem);
+  --size-step-5: clamp(2.7994rem, 1.5804rem + 6.5011vw, 7.0657rem);
 
   /* Spacings */
 
-  --space-3xs: clamp(0.25rem, calc(0.23rem + 0.1vw), 0.31rem);
-  --space-2xs: clamp(0.5rem, calc(0.46rem + 0.19vw), 0.63rem);
-  --space-xs: clamp(0.75rem, calc(0.69rem + 0.29vw), 0.94rem);
-  --space-s: clamp(1rem, calc(0.92rem + 0.39vw), 1.25rem);
-  --space-m: clamp(1.5rem, calc(1.38rem + 0.58vw), 1.88rem);
-  --space-l: clamp(2rem, calc(1.84rem + 0.78vw), 2.5rem);
-  --space-xl: clamp(3rem, calc(2.77rem + 1.17vw), 3.75rem);
-  --space-2xl: clamp(4rem, calc(3.69rem + 1.55vw), 5rem);
+  --space-3xs: clamp(0.3125rem, 0.3125rem + 0vw, 0.3125rem);
+  --space-2xs: clamp(0.5625rem, 0.5362rem + 0.1053vw, 0.625rem);
+  --space-xs: clamp(0.875rem, 0.8487rem + 0.1053vw, 0.9375rem);
+  --space-s: clamp(1.125rem, 1.0724rem + 0.2105vw, 1.25rem);
+  --space-m: clamp(1.6875rem, 1.6086rem + 0.3158vw, 1.875rem);
+  --space-l: clamp(2.25rem, 2.1447rem + 0.4211vw, 2.5rem);
+  --space-xl: clamp(3.375rem, 3.2171rem + 0.6316vw, 3.75rem);
+  --space-2xl: clamp(4.5rem, 4.2895rem + 0.8421vw, 5rem);
+  --space-3xl: clamp(6.75rem, 6.4342rem + 1.2632vw, 7.5rem);
 
   /* One-up pairs */
 
-  --space-3xs-2xs: clamp(0.25rem, calc(0.13rem + 0.58vw), 0.63rem);
-  --space-2xs-xs: clamp(0.5rem, calc(0.36rem + 0.68vw), 0.94rem);
-  --space-xs-s: clamp(0.75rem, calc(0.59rem + 0.78vw), 1.25rem);
-  --space-s-m: clamp(1rem, calc(0.73rem + 1.36vw), 1.88rem);
-  --space-m-l: clamp(1.5rem, calc(1.19rem + 1.55vw), 2.5rem);
-  --space-l-xl: clamp(2rem, calc(1.46rem + 2.72vw), 3.75rem);
-  --space-xl-2xl: clamp(3rem, calc(2.38rem + 3.11vw), 5rem);
+  --space-3xs-2xs: clamp(0.3125rem, 0.1809rem + 0.5263vw, 0.625rem);
+  --space-2xs-xs: clamp(0.5625rem, 0.4046rem + 0.6316vw, 0.9375rem);
+  --space-xs-s: clamp(0.875rem, 0.7171rem + 0.6316vw, 1.25rem);
+  --space-s-m: clamp(1.125rem, 0.8092rem + 1.2632vw, 1.875rem);
+  --space-m-l: clamp(1.6875rem, 1.3454rem + 1.3684vw, 2.5rem);
+  --space-l-xl: clamp(2.25rem, 1.6184rem + 2.5263vw, 3.75rem);
+  --space-xl-2xl: clamp(3.375rem, 2.6908rem + 2.7368vw, 5rem);
+  --space-2xl-3xl: clamp(4.5rem, 3.2368rem + 5.0526vw, 7.5rem);
 
   /* Custom pairs */
-
-  --space-l-2xl: clamp(2rem, calc(1.07rem + 4.66vw), 5rem);
+  --space-s-l: clamp(1.125rem, 0.5461rem + 2.3158vw, 2.5rem);
 }
