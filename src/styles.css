@@ -1,0 +1,78 @@
+@import 'fonts.css';
+@import 'reset.css';
+@import 'carousel.scss';
+
+:root {
+  /* Fonts */
+  --font-base: system-ui, sans-serif;
+  --font-heading: 'Nyght Serif', serif;
+  --font-title: 'Isenheim', serif;
+
+  /* Colors */
+  --bg: #e6ddde;
+  --fg: #654a4e;
+  --text: #926a71;
+}
+
+body {
+  --font-family: var(--font-base);
+  --font-size: 1rem;
+  --title-size: max(min(13vw, 150px), 50px);
+  --header-size: max(min(5vw, 62px), 25px);
+  --line-height: 1.5;
+  --color: var(--fg);
+
+  display: flex;
+  flex-direction: column;
+  min-width: 350px;
+  background-color: var(--bg);
+  margin: min(4vw, 50px);
+}
+
+.title {
+  display: flex;
+  gap: min(1.5vw, 20px);
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--title-size);
+  line-height: var(--title-size);
+  font-weight: 100;
+  color: var(--fg);
+  display: flex;
+}
+
+.logo {
+  display: inline;
+  height: calc(var(--title-size) * 0.85);
+  margin-top: calc(var(--title-size) * -0.08);
+}
+
+.subtitle {
+  max-width: min(80vw, 832px);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--header-size);
+  font-weight: 200;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+@media screen and (max-width: 500px) {
+  h1 {
+    font-weight: 200;
+  }
+  .logo {
+    display: none;
+  }
+  .subtitle {
+    max-width: 100%;
+    margin-top: 3vw;
+  }
+  h2 {
+    font-weight: 400;
+  }
+}

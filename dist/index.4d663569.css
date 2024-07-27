@@ -1,0 +1,294 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
+@font-face {
+  font-family: Nyght Serif;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local(""), url("NyghtSerif-Light.40b4409a.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Nyght Serif;
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: local(""), url("NyghtSerif-LightItalic.cc6a2b06.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Nyght Serif;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("NyghtSerif-Regular.f0bef65f.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Nyght Serif;
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: local(""), url("NyghtSerif-RegularItalic.580868d0.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Nyght Serif;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("NyghtSerif-Bold.7e79fd88.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Nyght Serif;
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: local(""), url("NyghtSerif-BoldItalic.27f6b8a0.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Nyght Serif;
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: local(""), url("NyghtSerif-Dark.bec14750.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Nyght Serif;
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: local(""), url("NyghtSerif-DarkItalic.e9f9853f.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Isenheim;
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local(""), url("Isenheim_Regulier.3584127e.otf");
+}
+
+@font-face {
+  font-family: Isenheim;
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: local(""), url("Isenheim_Fin.850d2093.otf");
+}
+
+*, :before, :after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+img, picture, video, canvas, svg {
+  max-width: 100%;
+  display: block;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  margin-block: 0;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+@keyframes carousel-animate {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(200%)scale(.7);
+  }
+
+  3%, 14.2857% {
+    visibility: visible;
+    opacity: .8;
+    transform: translateX(100%)scale(.9);
+  }
+
+  17.2857%, 28.5714% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0)scale(1);
+  }
+
+  31.5714%, 42.8571% {
+    visibility: visible;
+    opacity: .8;
+    transform: translateX(-100%)scale(.9);
+  }
+
+  45.8571% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(-200%)scale(.9);
+  }
+
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200%)scale(.7);
+  }
+}
+
+.container {
+  place-items: center;
+  height: 80%;
+  display: grid;
+  overflow: hidden;
+}
+
+.carousel {
+  pointer-events: none;
+  perspective: 100px;
+  width: 100%;
+}
+
+.carousel__wrapper {
+  justify-content: center;
+  height: 30vh;
+  display: flex;
+  position: relative;
+}
+
+.carousel .item {
+  margin-inline: var(--container-padding-horizontal);
+  opacity: 0;
+  will-change: transform, opacity;
+  max-width: 418px;
+  height: 100%;
+  animation: 27s cubic-bezier(.37, 0, .63, 1) infinite carousel-animate;
+  position: absolute;
+}
+
+@media (width <= 568px) {
+  .carousel .item {
+    margin-inline: calc(var(--container-padding-horizontal)  + 1px);
+  }
+}
+
+.carousel .item:first-child {
+  animation-delay: -3.85714s;
+}
+
+.carousel .item:nth-child(2) {
+  animation-delay: 0s;
+}
+
+.carousel .item:nth-child(3) {
+  animation-delay: 3.85714s;
+}
+
+.carousel .item:nth-child(4) {
+  animation-delay: 7.71429s;
+}
+
+.carousel .item:nth-child(5) {
+  animation-delay: 11.5714s;
+}
+
+.carousel .item:nth-child(6) {
+  animation-delay: 15.4286s;
+}
+
+.carousel .item:last-child {
+  animation-delay: -7.71429s;
+}
+
+.carousel img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+:root {
+  --font-base: system-ui, sans-serif;
+  --font-heading: "Nyght Serif", serif;
+  --font-title: "Isenheim", serif;
+  --bg: #e6ddde;
+  --fg: #654a4e;
+  --text: #926a71;
+}
+
+body {
+  --font-family: var(--font-base);
+  --font-size: 1rem;
+  --title-size: max(min(13vw, 150px), 50px);
+  --header-size: max(min(5vw, 62px), 25px);
+  --line-height: 1.5;
+  --color: var(--fg);
+  background-color: var(--bg);
+  flex-direction: column;
+  min-width: 350px;
+  margin: min(4vw, 50px);
+  display: flex;
+}
+
+.title {
+  gap: min(1.5vw, 20px);
+  display: flex;
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--title-size);
+  line-height: var(--title-size);
+  color: var(--fg);
+  font-weight: 100;
+  display: flex;
+}
+
+.logo {
+  height: calc(var(--title-size) * .85);
+  margin-top: calc(var(--title-size) * -.08);
+  display: inline;
+}
+
+.subtitle {
+  max-width: min(80vw, 832px);
+}
+
+h2 {
+  font-family: var(--font-heading);
+  font-size: var(--header-size);
+  color: var(--text);
+  font-weight: 200;
+  line-height: 1.2;
+}
+
+@media screen and (width <= 500px) {
+  h1 {
+    font-weight: 200;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .subtitle {
+    max-width: 100%;
+    margin-top: 3vw;
+  }
+
+  h2 {
+    font-weight: 400;
+  }
+}
+/*# sourceMappingURL=index.4d663569.css.map */

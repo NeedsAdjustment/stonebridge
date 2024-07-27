@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+$carousel-duration: 27s;
+$carousel-items: 7;
+$slide-change-timing: 3;
+$carousel-delay-fraction: $carousel-duration / $carousel-items;
+$carousel-steps-fraction: 100 / $carousel-items;
+$carousel-easing: cubic-bezier(0.37, 0, 0.63, 1);
+
+@keyframes carousel-animate {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(200%) scale(0.7);
+  }
+  #{$slide-change-timing}%,
+  #{$carousel-steps-fraction}% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(100%) scale(0.9);
+  }
+  #{$carousel-steps-fraction + $slide-change-timing}%,
+  #{$carousel-steps-fraction * 2}% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0) scale(1);
+  }
+  #{($carousel-steps-fraction * 2) + $slide-change-timing}%,
+  #{$carousel-steps-fraction * 3}% {
+    visibility: visible;
+    opacity: 0.8;
+    transform: translateX(-100%) scale(0.9);
+  }
+  #{($carousel-steps-fraction * 3) + $slide-change-timing}% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.9);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200%) scale(0.7);
+  }
+}
+
+.container {
+  display: grid;
+  place-items: center;
+  height: 80%;
+  overflow: hidden;
+}
+
+.carousel {
+  pointer-events: none;
+  perspective: 100px;
+  width: 100%;
+  &__wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 30vh;
+  }
+  .item {
+    position: absolute;
+    max-width: 418px;
+    height: 100%;
+    margin-inline: var(--container-padding-horizontal);
+    opacity: 0;
+    will-change: transform, opacity;
+    animation: carousel-animate $carousel-duration $carousel-easing infinite;
+    @media (max-width: 568px) {
+      margin-inline: calc(var(--container-padding-horizontal) + 1px);
+    }
+    @for $i from 1 through ($carousel-items - 1) {
+      &:nth-child(#{$i}) {
+        animation-delay: calc(#{$carousel-delay-fraction} * #{$i - 2});
+      }
+    }
+    &:last-child {
+      animation-delay: calc(-#{$carousel-delay-fraction} * 2);
+    }
+  }
+  img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 100%;
+  }
+}
