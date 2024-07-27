@@ -26,12 +26,13 @@ body {
   flex-direction: column;
   min-width: 350px;
   background-color: var(--bg);
-  margin: min(4vw, 50px);
 }
 
 .title {
   display: flex;
   gap: min(1.5vw, 20px);
+  margin: 0 min(4vw, 50px);
+  margin-top: min(4vw, 50px);
 }
 
 h1 {
@@ -51,6 +52,8 @@ h1 {
 
 .subtitle {
   max-width: min(80vw, 832px);
+  margin: 0 min(4vw, 50px);
+  margin-bottom: min(2vw, 30px);
 }
 
 h2 {
@@ -71,6 +74,7 @@ h2 {
   .subtitle {
     max-width: 100%;
     margin-top: 3vw;
+    margin-bottom: 5vw;
   }
   h2 {
     font-weight: 400;
