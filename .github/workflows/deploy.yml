@@ -27,10 +27,10 @@ jobs:
       - name: Set Up Node.js and Yarn
         uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version: '20.x'
           cache: 'yarn'
-      - name: Install Dependencies
-        run: yarn install --frozen-lockfile
+      - name: Install dependencies
+        run: yarn install --immutable
       - name: Build with Parcel
         run: yarn build
       - name: Setup Pages
