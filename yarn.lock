@@ -818,7 +818,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@parcel/transformer-sass@npm:2.12.0":
+"@parcel/transformer-sass@npm:latest":
   version: 2.12.0
   resolution: "@parcel/transformer-sass@npm:2.12.0"
   dependencies:
@@ -2560,7 +2560,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"parcel@npm:^2.12.0":
+"parcel@npm:latest":
   version: 2.12.0
   resolution: "parcel@npm:2.12.0"
   dependencies:
@@ -2741,15 +2741,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"root-workspace-0b6124@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "root-workspace-0b6124@workspace:."
-  dependencies:
-    "@parcel/transformer-sass": "npm:2.12.0"
-    parcel: "npm:^2.12.0"
-  languageName: unknown
-  linkType: soft
-
 "safe-buffer@npm:^5.0.1":
   version: 5.2.1
   resolution: "safe-buffer@npm:5.2.1"
@@ -2880,6 +2871,15 @@ __metadata:
   checksum: 10c0/df74b5883075076e78f8e365e4068ecd977af6c09da510cfc3148a303d4b87bc9aa8f7c48feb67ed4ef970b6140bd9eabba2129e28024aa88df5ea0114cba39d
   languageName: node
   linkType: hard
+
+"stonebridge@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "stonebridge@workspace:."
+  dependencies:
+    "@parcel/transformer-sass": "npm:latest"
+    parcel: "npm:latest"
+  languageName: unknown
+  linkType: soft
 
 "string-width-cjs@npm:string-width@^4.2.0, string-width@npm:^4.1.0":
   version: 4.2.3
