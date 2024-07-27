@@ -30,7 +30,7 @@ jobs:
           node-version: '20.x'
           cache: 'yarn'
       - name: Install dependencies
-        run: yarn install
+        run: yarn install --no-immutable
       - name: Build with Parcel
         run: yarn build
       - name: Setup Pages
