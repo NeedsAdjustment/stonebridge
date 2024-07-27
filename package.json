@@ -3,11 +3,13 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "deploy": "gh-pages -d dist"
   },
   "packageManager": "yarn@4.3.1",
   "devDependencies": {
     "@parcel/transformer-sass": "latest",
+    "gh-pages": "latest",
     "parcel": "latest"
   }
 }
