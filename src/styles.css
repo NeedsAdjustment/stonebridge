@@ -1,6 +1,6 @@
-@import 'fonts.css';
-@import 'reset.css';
-@import 'carousel.scss';
+@import './fonts.css';
+@import './reset.css';
+@import './carousel.scss';
 
 :root {
   /* Fonts */
