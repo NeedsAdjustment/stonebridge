@@ -3,7 +3,7 @@
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: local(""), url("NyghtSerif-Light.40b4409a.woff2") format("woff2");
+  src: local(""), url("NyghtSerif-Light.9df41869.woff2") format("woff2");
 }
 
 @font-face {
@@ -11,7 +11,7 @@
   font-style: italic;
   font-weight: 200;
   font-display: swap;
-  src: local(""), url("NyghtSerif-LightItalic.cc6a2b06.woff2") format("woff2");
+  src: local(""), url("NyghtSerif-LightItalic.ea0dde3d.woff2") format("woff2");
 }
 
 @font-face {
@@ -19,7 +19,7 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local(""), url("NyghtSerif-Regular.f0bef65f.woff2") format("woff2");
+  src: local(""), url("NyghtSerif-Regular.28d49034.woff2") format("woff2");
 }
 
 @font-face {
@@ -27,7 +27,7 @@
   font-style: italic;
   font-weight: 400;
   font-display: swap;
-  src: local(""), url("NyghtSerif-RegularItalic.580868d0.woff2") format("woff2");
+  src: local(""), url("NyghtSerif-RegularItalic.766c3f25.woff2") format("woff2");
 }
 
 @font-face {
@@ -35,7 +35,7 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: local(""), url("NyghtSerif-Bold.7e79fd88.woff2") format("woff2");
+  src: local(""), url("NyghtSerif-Bold.7be6e23c.woff2") format("woff2");
 }
 
 @font-face {
@@ -43,7 +43,7 @@
   font-style: italic;
   font-weight: 700;
   font-display: swap;
-  src: local(""), url("NyghtSerif-BoldItalic.27f6b8a0.woff2") format("woff2");
+  src: local(""), url("NyghtSerif-BoldItalic.92b0139d.woff2") format("woff2");
 }
 
 @font-face {
@@ -51,7 +51,7 @@
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: local(""), url("NyghtSerif-Dark.bec14750.woff2") format("woff2");
+  src: local(""), url("NyghtSerif-Dark.918975c4.woff2") format("woff2");
 }
 
 @font-face {
@@ -59,7 +59,7 @@
   font-style: italic;
   font-weight: 900;
   font-display: swap;
-  src: local(""), url("NyghtSerif-DarkItalic.e9f9853f.woff2") format("woff2");
+  src: local(""), url("NyghtSerif-DarkItalic.3031e72e.woff2") format("woff2");
 }
 
 @font-face {
@@ -67,7 +67,7 @@
   font-style: normal;
   font-weight: 200;
   font-display: swap;
-  src: local(""), url("Isenheim_Regulier.3584127e.otf");
+  src: local(""), url("Isenheim_Regulier.c4f3c78b.otf");
 }
 
 @font-face {
@@ -75,7 +75,7 @@
   font-style: normal;
   font-weight: 100;
   font-display: swap;
-  src: local(""), url("Isenheim_Fin.850d2093.otf");
+  src: local(""), url("Isenheim_Fin.419723fe.otf");
 }
 
 *, :before, :after {
