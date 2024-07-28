@@ -4,8 +4,7 @@
 
 :root {
   /* Fonts */
-  --font-base: system-ui, sans-serif;
-  --font-heading: 'Nyght Serif', serif;
+  --font-base: 'DM Sans', system-ui, sans-serif;
   --font-title: 'Isenheim', serif;
 
   /* Colors */
@@ -16,7 +15,7 @@
 
 body {
   --font-family: var(--font-base);
-  --font-size: 1rem;
+  --font-size: max(min(3vw, 62px), 100%);
   --title-size: max(min(13vw, 150px), 50px);
   --header-size: max(min(5vw, 62px), 25px);
   --line-height: 1.5;
@@ -25,6 +24,8 @@ body {
   display: flex;
   flex-direction: column;
   min-width: 350px;
+  max-width: 1228px;
+  margin: 0 auto;
   background-color: var(--bg);
 }
 
@@ -33,15 +34,6 @@ body {
   gap: min(1.5vw, 20px);
   margin: 0 min(4vw, 50px);
   margin-top: min(4vw, 50px);
-}
-
-h1 {
-  font-family: var(--font-title);
-  font-size: var(--title-size);
-  line-height: var(--title-size);
-  font-weight: 100;
-  color: var(--fg);
-  display: flex;
 }
 
 .logo {
@@ -56,27 +48,68 @@ h1 {
   margin-bottom: min(2vw, 30px);
 }
 
+.carousel {
+  margin-bottom: min(2vw, 30px);
+}
+
+.details {
+  margin: 0 min(4vw, 50px);
+}
+
+h1 {
+  font-family: var(--font-title);
+  font-size: var(--title-size);
+  line-height: var(--title-size);
+  font-weight: 100;
+  color: var(--fg);
+  display: flex;
+}
+
 h2 {
-  font-family: var(--font-heading);
+  font-family: var(--font-base);
   font-size: var(--header-size);
   font-weight: 200;
   line-height: 1.2;
   color: var(--text);
+  letter-spacing: 0.03em;
+}
+
+p {
+  font-family: var(--font-base);
+  font-size: var(--font-size);
+  font-weight: 300;
+  color: var(--text);
 }
 
 @media screen and (max-width: 500px) {
-  h1 {
-    font-weight: 200;
+  .title {
+    flex-direction: column;
+    gap: 3vw;
+    margin-top: 5vw;
   }
+
   .logo {
-    display: none;
+    height: max(20vw, 75px);
+    margin-top: 0;
+    margin-bottom: 2vw;
   }
   .subtitle {
     max-width: 100%;
     margin-top: 3vw;
     margin-bottom: 5vw;
   }
+
+  .carousel {
+    margin-bottom: 5vw;
+  }
+  h1 {
+    font-weight: 200;
+    max-width: fit-content;
+    margin: 0 auto;
+  }
   h2 {
-    font-weight: 400;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 0.02em;
   }
 }

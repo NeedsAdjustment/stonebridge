@@ -1,5 +1,5 @@
 $carousel-duration: 27s;
-$carousel-items: 7;
+$carousel-items: 8;
 $slide-change-timing: 3;
 $carousel-delay-fraction: $carousel-duration / $carousel-items;
 $carousel-steps-fraction: 100 / $carousel-items;
@@ -44,7 +44,6 @@ $carousel-easing: cubic-bezier(0.37, 0, 0.63, 1);
 .carousel {
   max-width: 1228px;
   overflow: hidden;
-  pointer-events: none;
   &__wrapper {
     position: relative;
     display: flex;

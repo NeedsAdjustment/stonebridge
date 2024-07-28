@@ -8,6 +8,7 @@
   "packageManager": "yarn@4.3.1",
   "devDependencies": {
     "@parcel/transformer-sass": "latest",
-    "parcel": "latest"
+    "parcel": "latest",
+    "sharp": "^0.31.3"
   }
 }
