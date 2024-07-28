@@ -1,8 +1,8 @@
 $carousel-duration: 27s;
 $carousel-items: 8;
 $slide-change-timing: 3;
-$carousel-delay-fraction: $carousel-duration / $carousel-items;
-$carousel-steps-fraction: 100 / $carousel-items;
+$carousel-delay-fraction: calc($carousel-duration / $carousel-items);
+$carousel-steps-fraction: calc(100 / $carousel-items);
 $carousel-easing: cubic-bezier(0.37, 0, 0.63, 1);
 
 @keyframes carousel-animate {
