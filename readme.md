@@ -1,6 +1,6 @@
 idk why I thought [Astro](https://astro.build/) would be worth it for a one-pager lmao
 
-we do not appreciate the fine art of pure html/css these days (which is why this has [parcel](https://parceljs.org/) and some other nonsense added)
+we do not appreciate the fine art of pure html/css these days (which is why this has [Parcel](https://parceljs.org/) and some other nonsense added)
 
 **to-do**
 - [x] design (in my head now ig)
