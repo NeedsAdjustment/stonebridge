@@ -54,6 +54,17 @@ body {
 
 .details {
   margin: 0 min(4vw, 50px);
+  margin-bottom: min(2vw, 30px);
+}
+
+.contact {
+  margin-left: min(4vw - 8px, 42px);
+  margin-right: min(4vw, 50px);
+  margin-bottom: min(2vw, 30px);
+}
+
+.contact-title {
+  padding-left: 8px;
 }
 
 h1 {
@@ -77,8 +88,13 @@ h2 {
 p {
   font-family: var(--font-base);
   font-size: var(--font-size);
-  font-weight: 300;
+  font-weight: 250;
+
   color: var(--text);
+}
+
+b {
+  font-weight: 700;
 }
 
 @media screen and (max-width: 500px) {
@@ -111,5 +127,8 @@ p {
     font-weight: 300;
     text-align: center;
     letter-spacing: 0.02em;
+  }
+  p {
+    font-weight: 300;
   }
 }

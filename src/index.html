@@ -27,55 +27,85 @@
             <source srcset="/res/photos/2.jpg?as=webp&width=1000" type="image/webp" />
             <img src="/res/photos/2.jpg" />
           </picture>
-      </div>
-      <div class="item" id="slide-2">
-        <picture>
-          <source srcset="/res/photos/3.jpg?as=avif&width=1000" type="image/avif" />
-          <source srcset="/res/photos/3.jpg?as=webp&width=1000" type="image/webp" />
-          <img src="/res/photos/3.jpg" />
-        </picture>
-      </div>
-      <div class="item" id="slide-3">
-        <picture>
-          <source srcset="/res/photos/4.jpg?as=avif&width=1000" type="image/avif" />
-          <source srcset="/res/photos/4.jpg?as=webp&width=1000" type="image/webp" />
-          <img src="/res/photos/4.jpg" />
-        </picture>
-      </div>
-      <div class="item" id="slide-4">
-        <picture>
-          <source srcset="/res/photos/5.jpg?as=avif&width=1000" type="image/avif" />
-          <source srcset="/res/photos/5.jpg?as=webp&width=1000" type="image/webp" />
-          <img src="/res/photos/5.jpg" />
-        </picture>
-      </div>
-      <div class="item" id="slide-5">
-        <picture>
-          <source srcset="/res/photos/6.jpg?as=avif&width=1000" type="image/avif" />
-          <source srcset="/res/photos/6.jpg?as=webp&width=1000" type="image/webp" />
-          <img src="/res/photos/6.jpg" />
-        </picture>
-      </div>
-      <div class="item" id="slide-6">
-        <picture>
-          <source srcset="/res/photos/7.jpg?as=avif&width=1000" type="image/avif" />
-          <source srcset="/res/photos/7.jpg?as=webp&width=1000" type="image/webp" />
-          <img src="/res/photos/7.jpg" />
-        </picture>
-      </div>
-      <div class="item" id="slide-7">
-        <picture>
-          <source srcset="/res/photos/8.jpg?as=avif&width=1000" type="image/avif" />
-          <source srcset="/res/photos/8.jpg?as=webp&width=1000" type="image/webp" />
-          <img src="/res/photos/8.jpg" />
-        </picture>
+        </div>
+        <div class="item" id="slide-2">
+          <picture>
+            <source srcset="/res/photos/3.jpg?as=avif&width=1000" type="image/avif" />
+            <source srcset="/res/photos/3.jpg?as=webp&width=1000" type="image/webp" />
+            <img src="/res/photos/3.jpg" />
+          </picture>
+        </div>
+        <div class="item" id="slide-3">
+          <picture>
+            <source srcset="/res/photos/4.jpg?as=avif&width=1000" type="image/avif" />
+            <source srcset="/res/photos/4.jpg?as=webp&width=1000" type="image/webp" />
+            <img src="/res/photos/4.jpg" />
+          </picture>
+        </div>
+        <div class="item" id="slide-4">
+          <picture>
+            <source srcset="/res/photos/5.jpg?as=avif&width=1000" type="image/avif" />
+            <source srcset="/res/photos/5.jpg?as=webp&width=1000" type="image/webp" />
+            <img src="/res/photos/5.jpg" />
+          </picture>
+        </div>
+        <div class="item" id="slide-5">
+          <picture>
+            <source srcset="/res/photos/6.jpg?as=avif&width=1000" type="image/avif" />
+            <source srcset="/res/photos/6.jpg?as=webp&width=1000" type="image/webp" />
+            <img src="/res/photos/6.jpg" />
+          </picture>
+        </div>
+        <div class="item" id="slide-6">
+          <picture>
+            <source srcset="/res/photos/7.jpg?as=avif&width=1000" type="image/avif" />
+            <source srcset="/res/photos/7.jpg?as=webp&width=1000" type="image/webp" />
+            <img src="/res/photos/7.jpg" />
+          </picture>
+        </div>
+        <div class="item" id="slide-7">
+          <picture>
+            <source srcset="/res/photos/8.jpg?as=avif&width=1000" type="image/avif" />
+            <source srcset="/res/photos/8.jpg?as=webp&width=1000" type="image/webp" />
+            <img src="/res/photos/8.jpg" />
+          </picture>
+        </div>
       </div>
     </aside>
     <div class="details">
       <p>
-        Stonebridge Estate is a luxe venue for <b>dressing & photoshoots</b> located in the heart of the <b>Manawatū, NZ</b>.
-        We provide a beautiful, private, and tranquil setting for the first moments of your special day.
+        Stonebridge Estate is a luxe venue for <b>dressing & photoshoots</b> located in the heart of the <b>Manawatū</b>. We provide a beautiful,
+        private, and tranquil setting for the first moments of your special day.
       </p>
+    </div>
+    <div class="contact">
+      <p class="contact-title"><b>Contact Us</b></p>
+      <iframe
+        data-tally-src="https://tally.so/embed/3qWYpY?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1"
+        loading="lazy"
+        width="100%"
+        height="324"
+        frameborder="0"
+        marginheight="0"
+        marginwidth="0"
+        title="Contact form"
+      ></iframe>
+      <script>
+        var d = document,
+          w = 'https://tally.so/widgets/embed.js',
+          v = function () {
+            'undefined' != typeof Tally
+              ? Tally.loadEmbeds()
+              : d.querySelectorAll('iframe[data-tally-src]:not([src])').forEach(function (e) {
+                  e.src = e.dataset.tallySrc
+                })
+          }
+        if ('undefined' != typeof Tally) v()
+        else if (d.querySelector('script[src="' + w + '"]') == null) {
+          var s = d.createElement('script')
+          ;(s.src = w), (s.onload = v), (s.onerror = v), d.body.appendChild(s)
+        }
+      </script>
     </div>
   </body>
 </html>
